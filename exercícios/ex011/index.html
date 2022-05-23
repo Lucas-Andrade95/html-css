@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <hr>
+    <p>Tente abrir essas imagens em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotoP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotoM.png" type="image/png">
+        <img src="imagens/fotoG.png" alt="Imagem flexível">
+    </picture>
+
+    <hr>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Aprendendo a reproduzir áudio em HTML5</p>
+    <audio src="midia/audio1.mp3" controls autoplay></audio>
+
+    <p>Outra forma de adicionar audios</p>
+    <audio preload="metadata" controls autoplay> 
+        <!--preload significa o que você irá carregar ao mesmo tempo que carrega a página
+        não deixe em auto, senão ele irá carregar todo o áudio sem necessidade
+        deixe em metadata, pois ele vai carregar só os metadados do seu ádio, ou deixe em none
+        que ele não irá carregar nenhum -->
+        <source src="midia/audio2.mp3" type="audio/mpeg">
+        <source src="midia/audio2.ogg" type="audio/ogg">
+        <source src="midia/audio2.wav" type="audio/wav">
+        <!-- Se coloca estes tipos diferentes, pois pode ser que o navegador não suporte o arquivo mpeg (mp3) então ele irá buscar os próximos formatos-->
+    </audio>
+<hr>
+    <h1>E agora, os VÍDEOS!!!</h1>
+    <p>Vamos inserir os vídeos com a tag &lt;video&gt;</p>
+    <video width="600" poster="imagens/EXTRATORA IPC ( YOU TUBE).png" controls autoplay>
+        <source src="midia/702022045_T_cnt_1_r240P.mp4" type="video/mp4">
+    </video>
+<hr>
+  <h1>Inserindo vídeos do YouTube</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/MZEmjQ4E1to" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <hr>
+  <h1>Inserindo vídeos do Vimeo</h1>
+
+</body>
+</html>
